@@ -9,7 +9,7 @@ function Loja({ onComprar, quantidadesCarrinho = {} }) {
   const [erro, setErro] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/products")
+    fetch("http://10.0.1.90:3000/products")
       .then((resposta) => {
         if (!resposta.ok) {
           throw new Error("Erro ao buscar produtos.");
