@@ -1,0 +1,147 @@
+.carrinho-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  box-sizing: border-box;
+}
+
+.carrinho-container h1 {
+  margin: 0 0 30px;
+  color: #222;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.carrinho-lista {
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #ddd;
+}
+
+.carrinho-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 4px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+.carrinho-produto-nome {
+  flex: 1;
+}
+
+.carrinho-controles-quantidade {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carrinho-controles-quantidade button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #222;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.carrinho-controles-quantidade button:disabled {
+  color: #999;
+  background: #eee;
+  cursor: not-allowed;
+}
+
+.carrinho-controles-quantidade span {
+  min-width: 20px;
+  text-align: center;
+}
+
+.carrinho-subtotal {
+  white-space: nowrap;
+}
+
+.carrinho-subtotal strong {
+  color: #15803d;
+}
+
+.carrinho-remover {
+  padding: 8px 10px;
+  border: 1px solid #b42318;
+  border-radius: 4px;
+  background: #fff;
+  color: #b42318;
+  cursor: pointer;
+}
+
+.carrinho-remover:hover {
+  background: #fef3f2;
+}
+
+.carrinho-quantidade-total {
+  text-align: right;
+  color: #555;
+}
+
+.carrinho-total {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.carrinho-total strong {
+  color: #15803d;
+}
+
+.carrinho-finalizar {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px 18px;
+  border: 0;
+  border-radius: 4px;
+  background: #15803d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.carrinho-finalizar:hover {
+  background: #166534;
+}
+
+.carrinho-vazio {
+  padding: 40px 20px;
+  color: #555;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .carrinho-container {
+    padding: 24px 14px;
+  }
+
+  .carrinho-container h1 {
+    margin-bottom: 22px;
+    font-size: 1.6rem;
+  }
+
+  .carrinho-item {
+    flex-wrap: wrap;
+    padding: 16px 2px;
+  }
+
+  .carrinho-produto-nome {
+    flex-basis: 100%;
+  }
+
+  .carrinho-remover {
+    margin-left: auto;
+  }
+}

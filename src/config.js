@@ -1,0 +1,1 @@
+export const WHATSAPP_LOJISTA = "5511999999999";

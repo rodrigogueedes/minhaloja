@@ -1,0 +1,92 @@
+
+
+.menu-navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  width: 100%;
+  margin: 0;
+  padding: 16px 5%;
+
+  box-sizing: border-box;
+  background-color: #0f2b48;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+.menu-logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.menu-links a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.menu-links a:hover {
+  color: #93c5fd;
+}
+
+.menu-carrinho {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu-contador {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 4px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  .menu-navegacao {
+    gap: 16px;
+    padding: 14px 16px;
+  }
+
+  .menu-logo {
+    font-size: 1.25rem;
+  }
+
+  .menu-links {
+    gap: 14px;
+  }
+
+  .menu-links a {
+    font-size: 0.9rem;
+  }
+}
